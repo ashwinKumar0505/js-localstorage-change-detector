@@ -1,7 +1,7 @@
 {
-  "name": "js-localStorage-change-detector",
+  "name": "js-localstorage-change-detector",
   "version": "1.0.0",
-  "description": "",
+  "description": "A library to detect any or particular key changes in local storage",
   "main": "dist/index.js",
   "scripts": {},
   "keywords": [],
