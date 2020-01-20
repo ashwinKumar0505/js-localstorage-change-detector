@@ -1,6 +1,6 @@
-const localStorageDetector = {};
+const lsChangeDetector = {};
 
-localStorageDetector.addChangeListener = function(
+lsChangeDetector.addChangeListener = function(
   functionality,
   key,
   callback,
@@ -8,7 +8,7 @@ localStorageDetector.addChangeListener = function(
   function onKeysChange(keys, callback) {
     window.addEventListener('storage', event => {
       if (keys.includes(event.key)) {
-        lsChangeDetector(callback, event.key, event.newValue);
+        executeCallback(callback, event.key, event.newValue);
       }
     });
   }
@@ -23,7 +23,7 @@ localStorageDetector.addChangeListener = function(
     }
   }
 
-  function lsChangeDetector(callback, key, value) {
+  function executeCallback(callback, key, value) {
     if (callback) {
       callback(key, value);
     } else {
@@ -33,7 +33,7 @@ localStorageDetector.addChangeListener = function(
   }
   function onAnyKeyChange(callback) {
     window.addEventListener('storage', event =>
-      lsChangeDetector(callback, event.key, event.newValue),
+      executeCallback(callback, event.key, event.newValue),
     );
   }
 };

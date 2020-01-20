@@ -13,7 +13,7 @@ function setTheName() {
     ? localStorage.getItem('country')
     : 'no country';
 
-  localStorageDetector.addChangeListener('onChange', 'name', modify);
+  lsChangeDetector.addChangeListener('onChange', null , modify);
 }
 
 function nameValueHandler() {
