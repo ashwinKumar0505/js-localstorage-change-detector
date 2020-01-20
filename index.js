@@ -37,5 +37,3 @@ localStorageDetector.addChangeListener = function(
     );
   }
 };
-
-module.exports=localStorageDetector;
