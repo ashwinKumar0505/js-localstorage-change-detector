@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {},
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "ashwinKumar0505",
+  "license": "MIT",
+  "repository": "ashwinKumar0505/js-localstorage-change-detector",
   "devDependencies": {
     "eslint": "^6.8.0"
   },
