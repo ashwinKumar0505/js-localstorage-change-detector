@@ -37,7 +37,7 @@ const App = () => {
 
 ### Basic Usage
 
-1.To make the lsChangeDetector to watch all the keys and execute any one of the key is changed.
+1.To make the lsChangeDetector to watch all the keys and execute a call back if any of the keys changed.
 
 ```js
 import lsChangeDetector from 'js-localstorage-change-detector';
@@ -50,7 +50,7 @@ const App = () => {
 };
 ```
 
-2.To make the lsChangeDetector to watch a single key and execute a call back if that key is alone change.
+2.To make the lsChangeDetector to watch a single key and execute a call back if that key is alone changed.
 
 ```js
 import lsChangeDetector from 'js-localstorage-change-detector';
